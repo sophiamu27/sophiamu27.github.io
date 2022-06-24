@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title> Agency - Cost of Living theme </title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#services">Exploratory data Analysis</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Machine Leaning Models</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Welcome To Our Website!</div>
+                <div class="masthead-heading text-uppercase">Cost of Living</div>
+                <!--<a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>-->
+            </div>
+        </header>
+        <!-- EDA-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Exploratory Data Analysis (EDA)</h2>
+                    <h3 class="section-subheading text-muted"> The process of performing initial investigations on data so as to discover patterns, to spot anomalies, and to test hypothesis with statistics and graphical representations.</h3>
+                </div>
+                <div class="row text-center">
+                  <!--First Plot-->
+                  <h4>Cost of Living Vs Rent Index</h4>
+                  <iframe width='1400' height='500' src='Cost_of_living_VS_City.html'></iframe>
+                    <p class="text-muted">This graph shows the correlation of the cities and their rent index. </p>
+                  <!--Second Plot-->
+                  <h4 class="my-3">Cost of Living Vs Rent Index</h4>
+                  <iframe width='1400' height='500' src='First_costofliving.html'></iframe>
+                    <p class="text-muted">This graph shows the correlation of the cities and their rent index. </p>
+                  <!--Third Plot-->
+                  <h4>Heatmap</h4>
+                      <iframe width='1400' height='1200' src='Correlation_plot.html'></iframe>
+                    <p class="text-muted">This heatmap shows the correlation between the most important values. </p>
+                  <!--Forth Plot-->
+                  <h4>Scatter Matrix</h4>
+                   <iframe width='1400' height='1200' src='Scatter_Matrix.html'></iframe>
+                    <p class="text-muted"> This graph shows the correlation between different values in these cities. Different combinations will result in a positive or negative result, depending on the city. </p>
+                </div>
+        </section>
+
+<!---------------------------------------Models--------------------------------------------->
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Machine Learning Models</h2>
+                    <h3 class="section-subheading text-muted">More about the models we tested.</h3>
+                </div>
+              <!--David: Decsion Tree------------------------------------------------------->
+                <div class="row">
+                    <div>
+                      <h1 style="color:black">Decision Tree</h1>
+                                <!--<div class="portfolio-hover">
+                                    <div class="portfolio-h0over-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>-->
+                                <img class="img-fluid" src="./images/decision-tree-template-3-1.png" alt="..." width="500" height="600">
+                                <div class="portfolio-caption-subheading text-muted">David Zimmermann</div>
+                              <h2>
+                                History:
+                              </h2>
+                              <p2>There are many variations of the decision tree but the first was invented in 1963 at the University of Wisconsin–Madison in an AID project </p2>
+                              <h2>
+                                How it Works:
+                              </h2>
+                              <p2>A decision tree is a type of supervised machine learning used to categorize or make predictions based on how a previous set of questions were answered. The model is a form of supervised learning, meaning that the model is trained and tested on a set of data that contains the desired categorization.</p2>
+                              <h2>
+                              Pros and Cons:
+                              </h2>
+                                <h3>
+                                  Pros:
+                                </h3>
+                            <p2>
+<li> It requires less time to get the data prepared for it.</li>
+<li>The data doesn't have to be normalized </li>
+<li>No scaling is needed for a decision tree</li>
+<li>Easy to explain</li>
+                           </p2>
+                                 <h3>
+                                  Cons:
+                                </h3>
+                            <p2>
+<li>A small change in data can affect it on a large scale</li>
+<li>The decision tree can give too complex answers</li>
+<li>The tree can take a long amount of time to calculate</li>
+<li>The Decision tree does not work very well with regression and can often over fit</li>
+                           </p2>
+                                <h2>
+                                Hyper Parameters:
+                              </h2>
+                              <p2>For the Hyper Parameters there were many parmeters but the most important on was random state. Random state provided the values for he model</p2> 
+                              <h2>
+                                Outcome:
+                              </h2>
+                              <p2> The values we gathered from the Decision Tree were:
+                                
+                              <li>Train value- 1</li>
+                      <li>Test value - 0.9814198867197563 </li>
+                      <li> MSE - 4.71875</li>
+                      
+                      As you can see these out comes might be desirable but the MSE shows that the Decision Tree was over fitting which would ot work for our data</p2>
+                              </div>
+                              </div>
+                        <!-- Portfolio item 2-->
+              <!-- Katherine: SVR----------------------------------------------------------------->
+                      <!--<div class="col-lg-6 col-md-8 mb-4">-->
+                   <h1>Support Vector Regression</h1> <!--<div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>-->
+                                <img class="img-fluid" src="./images/Svr_example.png" alt="..." width="500" height="800">
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-subheading text-muted">Katherine Xie</div>
+                                <h2>History:</h2>
+                                <p2>This machine learning model was invented by Vladimir N. Vapnik and Alexey Ya. Chervonenkis in 1963</p2>
+
+                                <h2>How it Works:</h2>
+                                <p>SVM is a supervised machine learning algorithm that can be used for classification or regression. It finds a hyperplane that divides a data set into different classes. The goal for this method would be to choose a plane with the greatest margin between the hyperplane and a data point.</p>
+                                <h2>Pros and Cons:</h2>
+                                <h3>Pros:</h3>
+                                <li>Thrives in High Dimension</li>
+                                <li>Support Vector Machines are all about choosing the right kernel with the right parameters and this can provide lots of flexibility</li>
+                                <li>Fast Prediction</li>
+                                
+                                <h3>Cons:</h3>
+                                  <li>Not good for big data sets because training will take a long time</li>
+                                  <li>Less effective on messy data sets </li>
+                                  <li>Not the most efficient algorithms and it can be quite costly computationally to train them</li>
+                                  <li>Can be hard to interpret</li>
+                                  <li>Have to scale data</li>
+                              <h2>Hyper Parameters:</h2>
+<p2>We found that the best hyper parameters were:</p2>
+<p3 style="color:orange">
+  SVR(kernel='rbf', gamma='scale', tol=0.001, C=100)
+</p3>
+                              <div>
+                                <p4>
+  Scores:
+</p4>
+                              </div>
+
+                            <h3>
+  Outcome:
+</h3>
+<p>
+  After analyzing the results, we found that SVR produced fairly accurate predictions but had a high mean squared error, which means the model has large possibility for error.
+</p>
+                              <p5>
+                           <ul>
+    <li>Train Score- 0.9999799773106288</li>
+<li>Test Score- 0.9217180265305381</li>
+<li>Mean Squared Error- 117.1152028382671</li>
+  </ul>
+</p5>
+
+
+                          
+                        <!-- Portfolio item 3-->
+               <!--Sophia: Random Forest---------------------------------------------------------->
+                  <div>
+                    
+                    <h1>Random Forest</h1>
+                                <!--<<div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>-->
+                                <img class="img-fluid" src="./images/Random_forest_diagram_complete.png" alt="..." width="500" height="600">
+                          <div class="portfolio-caption">
+                                <div class="portfolio-caption-subheading text-muted">Sophia Mu</div>
+                       <h2>History:</h2>
+                      <p>Made by Tin Kam Ho in 1995
+                       <body style="background-color:silver">
+                        <h2>How it Works:</h2>
+                        <p>Random forest is a machine learning model. This model uses many decision trees to put in the input and calculate the output based on the mean or mode of the predictions made by the decision trees. </p>
+                        <h2>Pros and Cons:</h2>
+                        <h3>Pros:
+                          </h3>
+                          <li>can be used for classification and regression</li>
+                          <li>works well with non-linear data</li>
+                          <li>works efficiently with large datasets</li>
+                          <li>has a higher level of accuracy compared to decision tree</li>
+                          <li>has many parameters</li>
+
+                          <h3>Cons:</h3>
+                          <li>does not work well with linear data</li>
+                          <li>is known to overfit</li>
+                          <li>slow training</li>  
+
+                        <h2>Hyper Parameters:</h2>
+                        <ul>
+                          <li>n_estimators</li>
+                          <li>max_features</li>
+                          <li>max_depth</li>
+                          <li>min_samples_split</li>
+                          <li>min_samples_leaf</li>
+                          <li>random_state</li>
+                          <li>n_jobs</li>
+                          <li>oob_score</li>
+                        </ul>
+                          <h2>Outcome:</h2>
+                          <ul>
+                            <li>Train data after adding on parameters was 0.9895121580560061</li>
+                            <li>Test data after adding on parameters was 0.9745539111597259</li>
+                            <li>We did not end up using this model because other models were more accurate in the train and test results.</li>
+                         </ul>
+                      </body>
+                          </div>
+          </div>
+
+                       <!-- Portfolio item 4-->
+               <!-- Amir: Lasso------------------------------------------------------------------>
+                                <!--<div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>-->
+                          <h1>Lasso Regression</h1>
+                                <img class="img-fluid" src="images.png" alt="..." width="500" height="600">
+                          <div>
+                                <div class="portfolio-caption-subheading text-muted">Amir Ray</div>
+                              <h2>
+                                LASSO:
+                                  </h2>
+                                    <li>Least
+                                    <li>Absolute
+                                    <li>Shrinkage
+                                    <li>Selection
+                                    <Li>Operator
+                               <h2>
+                                 History:
+                                </h2>
+                               <p> Lasso regression was developed independently in geophysics literature in 1986. Statistician Robert Tibshirani independently rediscovered and popularised it in 1996. </p>
+
+                                <h2>
+                                  How it Works:
+                                </h2>
+
+                                <p>Lasso regression is a type of linear regression that is more accurate. This variant of linear regression uses shrinkage, which helps the results become more accurate. This type of regression specializes in models showing high levels of multicollinearity. Lasso regression is also a regularization  technique. This means that the data will most likely not overfitting. This linear regression technique has proven itself to be reliable and accurate.</p>
+                                <h3>
+                                   Pros and Cons:
+                                </h3>
+                                <h2>
+                                  Pros:
+                                </h2>
+                                <p>
+                                    <li> Avoids overfitting
+                                    <li> Can do feature selection
+                                    <li> Is fast when fitting data
+
+                            <h2>
+                              Cons:
+                            </h2>
+                            <p>
+                              <li> The model selected by lasso may be unstable
+                              <li> Lasso may randomly select things
+                              <li> Lasso is automatic which can be bad
+                            </p>
+                            <h2>Hyper Parameters:</h2>
+                            <p>We found that certain parameters increase our accuracy and MSE. Certain combinations proved to be reliable and accurate. The best hyperparameters for lasso are:</p>
+                                      <p style="color:orange"> Lasso(tol=0.000001, fit_intercept=False, precompute=False, max_iter=100000, warm_start=True, positive=False, copy_X=True, alpha=0.001 )</p>
+                            <h2>Outcome:</h2>
+                              <p>
+                                 <li>Accuracy(Train):   0.999999902536181
+                                 <Li>Accuracy(Test):  0.9999998915243217
+                                 <li>MSE:  0.7180257402316035
+                              </p>
+                         
+              </div>
+            <!-- Portfolio item 5----------------------------------------------------------------->
+                      <!-- Nne Ezi: Linear Regression-->
+                    <h1>Linear Regression</h1>
+                                <!--<div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>-->
+                                <img class="img-fluid" src="linear-regression-in-machine-learning.png" alt="..." width="500" height="600">
+                          <div>
+                                <div class="portfolio-caption-subheading text-muted"> Nne Ezi</div> 
+                            <p>
+                              The earliest form of linear regression was the least square method, which was published in 1805 by Legendre.
+                            </p>
+                              <p>
+                            linear regression is a  machine learning model that helps predict a linear relationship between input variables and single output variables. It is the process of finding the best fit line for a data points on a plot.  
+                              <3>
+                            <h2>
+  Pros and Cons:
+</h2>
+                            <h3>
+                              Pros: </h3>
+                            <li>It performs well for linear separable data</li>
+                            <li>It is easy to implement, and efficient at training</li>
+                           <li>It handles overfitting well</li>
+                            <h2>
+                              Cons:</h2>
+                            <li>It doesn't consider outliers.</li>
+                            <li>It assumes a linear relationship between the independent and dependent variables</li>
+                            <h2>
+                              Hyper Parameters:</h2>
+                            While using the machine learning of linear regression, the training data accuracy was 1.0, and for the testing data the accuracy was 0.99. Even when the parameter were change the accuracy level was consistent.
+                            <h2>
+                              Outcome:
+                            </h2>
+                            <p>
+                            All the accuracy scores for linear regression came out really high, near perfect, which we found might be too good to be true. It also had very low chance for error.                     </p>
+                                
+                         <li>Train Accuracy: 1.0</li>
+                         <li>Test Accuracy: 0.99</li>
+                           <li>Mean Squared Error: 0.0007</li>
+                              </div>
+            </div>
+        </section>
+        <!-- Models Table-------------------------------------------------------------------->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Machine Learning Models Comparison Table</h2>
+                  <head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+  table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+</style>
+</head>
+                    <table class="center">  <thead>    <tr style="color: red""text-align: center;">      <th></th>      <th>model</th>      <th>train_accuracy</th>      <th>test_accuracy</th>      <th>Mean_Sqr_Error</th>    </tr>  </thead>  <tbody>    <tr>      <th>0</th>      <td>Decision_Tree_Regression</td>      <td>1.000000</td>      <td>0.832656</td>      <td>42.500000</td>    </tr>    <tr>      <th>1</th>      <td>SVR</td>      <td>0.777679</td>      <td>0.704658</td>      <td>160.367782</td>    </tr>    <tr>      <th>2</th>      <td>Random_Forest</td>      <td>0.991175</td>      <td>0.965884</td>      <td>15.112181</td>    </tr>    <tr>      <th>3</th>      <td>Lasso</td>      <td>0.997535</td>      <td>0.995568</td>      <td>1.824815</td>    </tr>    <tr>      <th>4</th>      <td>Linear_Regression</td>      <td>1.000000</td>      <td>0.999998</td>      <td>0.000727</td>    </tr>  </tbody></table>
+                </div>
+              <div>
+              <body>
+                <p font size=15>
+                From this table, we can see that linear regression had the best train and test accuracy, as well as the lowest mean squared error score. For this reason, we decided to implement this model for our project.
+              </p>
+              </body>
+          </div>
+              <!--David to insert the plotly graph on MSE----------------------------> <h4> MSE Graph</h4>
+              <div class="row text-center">
+                  <!--First Plot-->
+                  <iframe width='800' height='500' src='MSE_Graph.html'></iframe>
+              </div>
+              <h4> Accuracy Scores Graph</h4>
+              <!--Nne Ezi to insert the plotly graph on test accuracies--------------------------->
+ <iframe width='1125' height='500' src='test_accuracy.html'></iframe>
+
+        </section>
+        <!-- About------------------------------------------------------------------------------------------------------------>
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">About</h2>
+                    <h3 class="section-subheading text-muted">Our Story</h3>
+                </div>
+               <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4></h4>
+                                <h4 class="subheading">What is Cost of Living</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Cost of living is the amount of money it would cost you to live in a specific area or city. Cost of living, itself, may sound like it only refers to where you are actually staying like a house or an apartment, but it is ,in fact, much more. It takes into consideration everything that you could have to spend money on from gas to groceries.
+</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4></h4>
+                                <h4 class="subheading">Why did we do it</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">The reason our team created the Cost of living project is because it would be extremely useful to the world if we do it correctly. We want to give people more information when they are planning to leave and live somewhere else. This project will give people more confidence going into their new life so they do not get surprised by the price of anything.</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4></h4>
+                                <h4 class="subheading">How did we do it</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted"> This website is very easy to follow and will be accessible to anyone who has an internet connection. Just put in a name of a city that you have thought about living and then our database will find your city and give you the numbers.If the city you request is not inn our extensive library of cities our AI will calculate the prices based on the other cities in the area and you will be informed that the price is not certain.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4></h4>
+                                <h4 class="subheading">Future Inventions</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">On top of idea we also are bringing new and special additions to our website. We will have a feature where, if you have not chosen a city or you are just curious,you can input a budget that you have set for yourself and our code will give you all the cities in our price range. You will also get a picture of the city along with an interactive map showing the surrounding area.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>
+                                Find your
+                                <br />
+                                Own Place
+                                <br />
+                                In life!
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Team-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Team Green Titans</h2>
+                    <h3 class="section-subheading text-muted">Meet our awesome mentor and team members.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="./images/ritum_singh.jpeg" alt="..." />
+                            <h4>Ritum Singh</h4>
+                            <p class="text-muted">Group Mentor</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="./images/David-1.JPG" alt="..." />
+                            <h4>David Zimmerman</h4>
+                            <p class="text-muted">Member</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="./images/Screen Shot 2022-06-22 at 10.19.46 AM.png" alt="..." />
+                          <h4>Katherine Xie</h4>
+                            <p class="text-muted">Member</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="./images/sophia's picture.png" alt="..." />
+                          <h4>Sophia Mu</h4>
+                            <p class="text-muted">Member</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="./images/me.png" alt="..." />
+                          <h4>Amir Ray</h4>
+                            <p class="text-muted">Member</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="./images/Photo from Zi🥲.jpg" alt="..." />
+                            <h4>Nne Ezi Okike</h4>
+                            <p class="text-muted">Member</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">We are one of the Batch A teams for Data Science(EST).</p></div>
+                </div>
+            </div>
+        </section>
+        <!-- Clients-->
+        <div class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3 col-sm-6 my-3">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact-->
+       
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2022</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Threads
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Illustration
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Explore
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Graphic Design
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Finish
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Identity
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Lines
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Branding
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Southwest
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Website Design
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Window
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Photography
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * contact* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
